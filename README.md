@@ -11,8 +11,11 @@
 ### Command-line args
 
 **run**
+
 *Default value (50,000) used if no args provided.*
+
 `lab2`
+
 `lab2 4000`
 
 ## Environment & Tools
@@ -51,4 +54,5 @@ A program illustrating the use of inter-process communication using pipes and po
 * If `poll()` returns ready events from either of the children's file descriptors and no errors were set, the parent attempts to `read()` from the pipe and, if successful, performs a `write()` of the character to the appropriate file. Additionally, for the purposes of the distribution output, each child's count variable and `std::map` is updated.
 
  **Child code**
+ 
 Each child simply calls their respective calculator, the results of which are piped to the parent.
